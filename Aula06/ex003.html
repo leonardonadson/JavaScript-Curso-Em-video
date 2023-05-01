@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h1{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1>
+    <p>Já me livrei da maldição!!</p>
+    <script>
+        /*
+        Conversão de variável para o tipo Number:
+
+        Conversão para um número inteiro: 
+        Number.parseInt() 
+
+        Conversão para um número de ponto flutuante:
+        Number.parseFloat()
+
+        Conversão para um número qualquer:
+        Number()
+        */
+
+        /*
+        Conversão de ariável paaraa o tipo String
+        .toString
+        String()
+        */
+        var n1 = Number(window.prompt("Digite um número"));
+        var n2 = Number(window.prompt("Digite outro número"));
+        var s = n1 + n2;
+
+        /*
+        Formas de se juntar o texto:
+        "Estou aprendendo s" // não faz a interpolação
+        "Estou aprendendo " + s // usa concatenação
+        `Estou aprendendo ${s}` // usa template string e faz a interpolação // esse ${} se chama placeholder
+        */
+
+        /*
+        s.length // diz o tamanho da string
+        s.toUpperCase() // para tudo Maiúsculas
+        s.toLowerCase() // para tudo Minúsculas
+        */
+
+        window.alert(`A soma de ${n1} + ${n2} é ${s}`)
+        //window.alert("A soma de " + n1 + "+" + n2 + " é " + s);
+
+        // (number + number) para adição
+        // (string + string) para concatenação
+
+        /*
+        Formatando Números
+        n1.toFixed(2) // Define a quantidade de casas decimais
+        n1.toFixed(2).replace('.', ',') // Define a quantidade de casas decimais e troca o . por ,
+        n1.toLocaleString( 'pt-BR', {style: 'currency', currency: 'BRL'}) // converte o valor numérico para valor em dinheiro brasileiro
+        n1.toLocaleString( 'pt-BR', {style: 'currency', currency: 'USD'}) // converte o valor numérico para valor em dinheiro estadunidense
+        n1.toLocaleString( 'pt-BR', {style: 'currency', currency: 'EUR'}) // converte o valor numérico para valor em dinheiro europeu
+        */
+    </script>
+</body>
+</html>
