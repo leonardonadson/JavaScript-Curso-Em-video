@@ -1,0 +1,60 @@
+ANOTAÇÕES - CURSO EM VÍDEO - JAVASCRIPT
+
+* Formas de se juntar o texto:
+    "Estou aprendendo s" // não faz a interpolação
+    "Estou aprendendo " + s // usa concatenação
+    `Estou aprendendo ${s}` // usa template string e faz a interpolação // esse ${} se chama placeholder
+
+* Conversão de variável para o tipo Number:
+    Conversão para um número inteiro: 
+    Number.parseInt() 
+
+    Conversão para um número de ponto flutuante:
+    Number.parseFloat()
+
+    Conversão para um número qualquer:
+    Number()
+
+* Conversão de variável para o tipo String:
+    .toString
+    String()
+
+*  Funções para Strings:
+    s.length // diz o tamanho da string
+    s.toUpperCase() // para tudo Maiúsculas
+    s.toLowerCase() // para tudo Minúsculas
+
+* Formatando Números
+    n1.toFixed(2) // Define a quantidade de casas decimais
+    n1.toFixed(2).replace('.', ',') // Define a quantidade de casas decimais e troca o . por ,
+    n1.toLocaleString( 'pt-BR', {style: 'currency', currency: 'BRL'}) // converte o valor numérico para valor monetário brasileiro
+
+* Operadores artiméticos de atribuição:
+    5 + 2 = 7 // soma
+    5 - 2 = 3 // subtração
+    5 * 2 = 10 // multiplicação
+    5 / 2 = 2,5 // divisão real
+    5 % 2 = 1 // resto da divisão inteira
+    5 ** 2 = 25 // potenciação
+
+    **Contas:
+        5 + 3 / 2
+        5 + 1,5 
+        6,5
+    
+* Precedência
+    1º - Parentêses ()
+    2º - Potência **
+    3º - Multiplicação * Divisão / e Resto da Divisão Inteira %*
+    4º - Adição + e Subtração -*
+    * Se esses estiverem na mesma expressão é executado na ordem do primeiro para o último da esquerda para a direita
+
+* Auto-Atribuições
+    N = 3
+    N = N + 4 // Irei guardar o valor que tenho e somar com 4
+    N += 4 // Faço a mesma operação acima de forma simplificada
+
+* Operadores de Incremento
+    x = x + 1 é o mesmo de X += 1 que é o mesmo que x++(pós-incremento) ou ++x(pré-incremento)
+    x = x - 1 é o mesmo de X -= 1 que é o mesmo que x--(pós-incremento) ou --x(pré-incremento)
+
