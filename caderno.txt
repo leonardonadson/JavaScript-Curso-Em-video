@@ -29,7 +29,7 @@ ANOTAÇÕES - CURSO EM VÍDEO - JAVASCRIPT
     n1.toFixed(2).replace('.', ',') // Define a quantidade de casas decimais e troca o . por ,
     n1.toLocaleString( 'pt-BR', {style: 'currency', currency: 'BRL'}) // converte o valor numérico para valor monetário brasileiro
 
-* Operadores artiméticos de atribuição:
+* Operadores artiméticos:
     5 + 2 = 7 // soma
     5 - 2 = 3 // subtração
     5 * 2 = 10 // multiplicação
@@ -58,3 +58,98 @@ ANOTAÇÕES - CURSO EM VÍDEO - JAVASCRIPT
     x = x + 1 é o mesmo de X += 1 que é o mesmo que x++(pós-incremento) ou ++x(pré-incremento)
     x = x - 1 é o mesmo de X -= 1 que é o mesmo que x--(pós-incremento) ou --x(pré-incremento)
 
+* Operadores relacionais
+    > maior que
+    < menor que
+    >= maior igual
+    <= menor igual
+    == igual
+    != diferente 
+
+    **Contas:
+        5 > 2 TRUE
+        7 < 4 TRUE
+        8 >= 8 TRUE
+        9 <= 7 FALSE
+        5 == 5 TRUE
+        4 != 4 FALSE
+
+* Identidade:
+    5 == 5 TRUE
+    5 == '5' TRUE
+    5 === '5' FALSE // OPERADOR DE IDENTIDADE (IGUALDADE RESTRITA)
+    5 === 5 TRUE
+
+    ** Contas
+    x = 5
+    y = '5'
+
+    typeof x
+    number
+    typeof y
+    string
+
+    x == y TRUE
+    x === y FALSE
+    x !== y TRUE (Desigual restrito)
+
+* Operadores Lógicos:
+    ! negação
+    && conjunção (e)
+    || disjunções (ou)
+
+    ** Lógica:
+    Negação:
+        Operador unário (depende de só um valor lógico)
+        !true => FALSE
+        !=false => TRUE
+    Conjunção:
+        Operador binário (depende de dois valores lógicos)
+        Ambos valores precisam ser verdadeiros
+        true && true => TRUE
+        true && false => FALSE
+    Disjunção:
+        Operador binário (depende de dois valores lógicos)
+        Somente um dos valores precisam ser verdadeiros
+        true || true => TRUE
+        true || false => TRUE
+        false || false => FALSE
+    
+    ** Contas
+    var a = 5
+    var b = 8
+
+    a > b && b % 2 == 0 // primeiro executa-se os operadores aritiméticos, relacionais e lógicos reespectivamente
+         5 > 8? false
+         8 % 2 == 0? true
+    FALSE
+
+    a <= b || b / 2 == 2
+        8 / 2 == 2? false
+        5 < 8 ? true
+    TRUE
+
+    ** Precedência geral
+    1º Operadores artiméticos
+    2º Operadores relacionais
+    3º Operadores lógicos
+
+    ** Precedência dos operadores lógicos
+        1º - Negação !
+        2º - Conjunção &&
+        3º - Disjunção ||
+    
+    ** Exemplos
+    idade >= 15 && idade <= 17 // a idade está entre 15 e 17?
+    estado == 'RJ' || estado == 'SP' // o estado é RJ ou SP?
+    salário > 1500 && sexo != 'M' // O salário é acima de 1500 e não é um homem?
+
+* Operador ternário
+    teste ? true : false
+        Esse operador depende de três outros valores
+        O primeiro é um teste lógico
+        O do meio é a execução quando o teste for verdadeiro
+        O último é a execução quando o teste for falso
+
+    ** Exemplo:
+    média >= 7? 'Aprovado' : 'Reprovado'
